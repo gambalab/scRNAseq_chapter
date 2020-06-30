@@ -9,7 +9,7 @@ The full article [(Slovin et al. 2020)](https://) will be soon available ...
 
 ## Pipelines Examples
 1. Monocle (R) [Cacchiarelli et al. 2014](https://www.nature.com/articles/nbt.2859)
-2. [GF-ICF](https://github.com/gambalab/scRNAseq_chapter/blob/master/pipelines/gf_icf_pipe.md) (R) [(Gambardella et al. 2019)](https://www.frontiersin.org/articles/10.3389/fgene.2019.00734/abstract)
+2. [GF-ICF](https://github.com/gambalab/scRNAseq_chapter/blob/master/pipelines/gf_icf_pipe.md) (R) [Gambardella et al. 2019](https://www.frontiersin.org/articles/10.3389/fgene.2019.00734/abstract)
 3. Suerat (R) [Stuart et al.](https://doi.org/10.1016/j.cell.2019.05.031)
 4. Scanpy (Python) [Wolf et al.](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-017-1382-0)
 
