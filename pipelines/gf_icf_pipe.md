@@ -46,12 +46,16 @@ data = gficf::runPCA(data = data,dim = 50)
 
 # Dimensionality reduction with UMAP 
 data = gficf::runReduction(data = data,reduction = "umap",nt = 6,verbose = T,metric="manhattan")
+```
+## 5. Clustering Analysis: how to identify cellular sub-populations
+As transcriptionally distinct populations of cells usually correspond to distinct cell types, a key goal of scRNA-seq consists in the identification of cell subpopulations based on their transcriptional similarity. Thus, organizing cells into groups (i.e. clusters) can allow for de novo detection of cell types or identification of different subpopulations in a single cell state.
 
+```R
 # Identify clusters
 data = gficf::clustcells(data = data,verbose = T,k = 50,nt = 6,community.algo = "louvian 2",resolution = .5,n.start = 50,n.iter = 250,dist.method = "manhattan")
 ```
 
-## 5. Plots
+## 6. Plots
 ```R
 # add info to cells
 data$embedded$cell.id = rownames(data$embedded)
