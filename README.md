@@ -5,6 +5,12 @@ Thanks to innovative sample-preparation and sequencing technologies, gene expres
 
 In this review, we aim to bridge over the above-mentioned hurdle and propose four ready-to-use pipelines for scRNA-seq analysis easily accessible by a newcomer, that could fit various biological data types. Here we provide an overview of the currently available single-cell technologies for cell isolation and library preparation and a step by step guide that covers the entire canonical analytic workflow to analyse scRNA-seq data including read mapping, quality controls, gene expression quantification, normalization, feature selection, dimensionality reduction, and cell clustering useful for trajectory inference and differential expression. Such workflow guidelines will escort novices as well as expert users in the analysis of complex scRNA-seq datasets, thus further expanding the research potential of single-cell approaches in basic science, and envisaging its future implementation as best practice in the field.
 
+## Pipelines Examples
+1. Monocle (R)
+2. GF-ICF (R)
+3. Suerat (R)
+4. Scanpy (Python)
+
 ## Contents of the article
 
 1. Introduction / Background
@@ -30,7 +36,6 @@ In this review, we aim to bridge over the above-mentioned hurdle and propose fou
 13. Results evaluation and comparison among the implemented pipelines
 14. Additional analyses: how to reconstruct cell transcriptional dynamics
 15. Discussion and future directions
-16. [Pipelines Examples](#pipelines-examples)
 
 ## Figures
 
@@ -49,10 +54,3 @@ In this review, we aim to bridge over the above-mentioned hurdle and propose fou
 
 ![alt text](https://github.com/gambalab/scRNAseq_chapter/blob/master/figures_HiRes/Figure_04.png?raw=true)
 <b>Figure4 - Cell clustering, comparison and evaluation of the implemented pipelines.</b> (A-D) UMAP visualization produced by each one of the 4 implemented pipelines where cells are colored according to the cluster in which they fall. (E) Agreement of identified cell clusters among the four implemented pipelines. (F) Cluster results of each independent pipeline is used to hierarchically cluster cell types and reconstruct cell lineage.
-<hr/>
-
-## Pipelines Examples
-1. Monocle (R)
-2. GF-ICF (R)
-3. Suerat (R)
-4. Scanpy (Python)
