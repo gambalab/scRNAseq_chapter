@@ -10,7 +10,7 @@ The full article [(Slovin et al. 2020)](https://) will be soon available ...
 ## Pipelines Examples
 1. Monocle (R) 
 2. [GF-ICF](https://github.com/gambalab/scRNAseq_chapter/blob/master/pipelines/gf_icf_pipe.md) (R)
-3. Suerat (R)
+3. Seurat (R)
 4. Scanpy (Python)
 
 ## Original Pubblications of the methods:
