@@ -30,6 +30,7 @@ In this review, we aim to bridge over the above-mentioned hurdle and propose fou
 13. Results evaluation and comparison among the implemented pipelines
 14. Additional analyses: how to reconstruct cell transcriptional dynamics
 15. Discussion and future directions
+16. [Pipelines Examples](#pipelines-examples)
 
 ## Figures
 
@@ -50,7 +51,7 @@ In this review, we aim to bridge over the above-mentioned hurdle and propose fou
 <b>Figure4 - Cell clustering, comparison and evaluation of the implemented pipelines.</b> (A-D) UMAP visualization produced by each one of the 4 implemented pipelines where cells are colored according to the cluster in which they fall. (E) Agreement of identified cell clusters among the four implemented pipelines. (F) Cluster results of each independent pipeline is used to hierarchically cluster cell types and reconstruct cell lineage.
 <hr/>
 
-## Pipelines Example
+## Pipelines Examples
 1. Monocle (R)
 2. GF-ICF (R)
 3. Suerat (R)
