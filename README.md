@@ -57,8 +57,8 @@ Scanpy [(Wolf et al. 2019)](https://genomebiology.biomedcentral.com/articles/10.
 <hr/>
 
 ![alt text](https://github.com/gambalab/scRNAseq_chapter/blob/master/figures_HiRes/Figure_03.png?raw=true)
-<b>Figure3 - Cell QC on Tabula Muris dataset.</b> (A) Detection of empty droplet by using emptyDrop function from DropUtils R package on Tabula Muris dataset. (B) Identification of cell multiplets in each independent run of Tabula Muris Dataset. (C) Distribution number of detected genes across the cells in the Tabula muris dataset. (D) PCA components as a function of their percentage of explained variance on Tabula Muris dataset (elbow plot).
+<b>Figure 3 - Cell QC on Tabula Muris dataset.</b> (A) Detection of empty droplet by using emptyDrop function from DropUtils R package on Tabula Muris dataset. (B) Identification of cell multiplets in each independent run of Tabula Muris Dataset. (C) Distribution number of detected genes across the cells in the Tabula muris dataset. (D) PCA components as a function of their percentage of explained variance on Tabula Muris dataset (elbow plot).
 <hr/>
 
 ![alt text](https://github.com/gambalab/scRNAseq_chapter/blob/master/figures_HiRes/Figure_04.png?raw=true)
-<b>Figure4 - Cell clustering, comparison and evaluation of the implemented pipelines.</b> (A-D) UMAP visualization produced by each one of the 4 implemented pipelines where cells are colored according to the cluster in which they fall. (E) Agreement of identified cell clusters among the four implemented pipelines. (F) Cluster results of each independent pipeline is used to hierarchically cluster cell types and reconstruct cell lineage.
+<b>Figure 4 - Cell clustering, comparison and evaluation of the implemented pipelines.</b> (A-D) UMAP visualization produced by each one of the 4 implemented pipelines where cells are colored according to the cluster in which they fall. (E) Agreement of identified cell clusters among the four implemented pipelines. (F) Cluster results of each independent pipeline is used to hierarchically cluster cell types and reconstruct cell lineage.
