@@ -1,7 +1,7 @@
 # Single-cell RNA sequencing analysis: a step by step overview
 #### S. Slovin<sup>1,+</sup>, A. Carissimo<sup>2,+</sup>, F. Panariello<sup>1,+</sup>, A. Grimaldi<sup>1</sup>, V. Bouché<sup>1</sup>, G. Gambardella<sup>1,3,++</sup>, D. Cacchiarelli<sup>1,4,++</sup>
 
-<sup>1</sup>Telethon Institute of Genetics and Medicine (TIGEM), Armenise/Harvard Laboratory of Integrative Genomics, Pozzuoli, Italy.  
+<sup>1</sup>Telethon Institute of Genetics and Medicine, Armenise/Harvard Laboratory of Integrative Genomics, Pozzuoli, Italy.  
 <sup>2</sup>Istituto per le Applicazioni del Calcolo "Mauro Picone," Consiglio Nazionale delle Ricerche, Naples, Italy.  
 <sup>3</sup>Department of Chemical Materials and Industrial Engineering, University of Naples “Federico II”, Naples, Italy.  
 <sup>4</sup>Department of Translational Medicine, University of Naples "Federico II", Naples, Italy.
