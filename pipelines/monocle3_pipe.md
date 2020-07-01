@@ -36,9 +36,9 @@ if(!require(monocle3))
 
 ```R
 # Load Tabula Muris dataset (already filterd)
-mtx=readRDS("/path/to/emptyDroplets_doublet_filtered_tabulamuris_mtx.rds") #get the matrix filtered for empty droplets and doublets
-cell_metadata=read.table("/path/to/Tabulamuris_cmd.txt", header=T,row.names=1) #data frame containing information about cells
-gene_metadata=read.table("/path/to/Tabulamuris_genes.txt", header=T, row.names=1) #data frame containing genes annotation
+mtx=readRDS("/path/to/emptyDroplets_doublet_filtered_tabulamuris_mtx.rds")
+cell_metadata=read.table("/path/to/Tabulamuris_cmd.txt", header=T,row.names=1)
+gene_metadata=read.table("/path/to/Tabulamuris_genes.txt", header=T, row.names=1)
 ```
 
 ## 3. Gene Filtering and normazlization
