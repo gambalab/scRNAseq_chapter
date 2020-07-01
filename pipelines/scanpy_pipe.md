@@ -25,19 +25,19 @@ print(sc.__version__)
 
 inp_dir = "/path/to/directory/with/data/"
 
-#file to save the final object in a python-compatible format
+# file to save the final object in a python-compatible format
 results_file = ''.join([inp_dir, "ExprMatrix.h5ad"])
 
-#data frame containing information about cells
+# data frame containing information about cells
 obs=pd.read_csv(''.join([inp_dir, "Tabulamuris_cmd.txt"]),sep="\t", index_col=0) 
 
-#data frame containing genes annotation
+# data frame containing genes annotation
 var=pd.read_csv(''.join([inp_dir, "Tabulamuris_genes.txt"]), index_col=0, sep="\t")
 
-#get the transposed matrix filtered for empty droplets and doublets
+# get the transposed matrix filtered for empty droplets and doublets
 adata=ad.read_mtx(''.join([inp_dir, "emptyDroplets_doublet_filtered_tabulamuris_mtx_transposed.mtx"]))
 
-#add metadata to the scanpy object
+# add metadata to the scanpy object
 adata.obs=obs
 adata.var=var
 ```
@@ -47,12 +47,11 @@ adata.var=var
 Data normalization addresses the unwanted biases arisen by count depth variability while preserving true biological differences.
 
 ```python
-#Scanpy suggests to filter out genes wich are expressed in less than 3 cells.
-
+# Scanpy suggests to filter out genes wich are expressed in less than 3 cells.
 sc.pp.filter_genes(adata, min_cells=3)
 
-#Scanpy provides a normalization that generates CPM values and it performs logarithm on pseudocounts.
-#This data is stored in the raw data compartment of adata.
+# Scanpy provides a normalization that generates CPM values and it performs logarithm on pseudocounts.
+# This data is stored in the raw data compartment of adata.
 sc.pp.normalize_total(adata, target_sum=1e6)
 sc.pp.log1p(adata)
 adata.raw = adata
@@ -65,18 +64,18 @@ Dimensionality reduction aims to condense the complexity of the data into a lowe
 # Gene filtering based on Hiigh Variable Genes (HVGs)
 sc.pp.highly_variable_genes(adata, min_mean=0.0125, max_mean=3, min_disp=0.5)
 
-#plot the metrics used for the selection of HVG
+# plot the metrics used for the selection of HVG
 sc.pl.highly_variable_genes(adata, save='.pdf') 
 
-#check the number of highly variable genes
+# check the number of highly variable genes
 sum(adata.var['highly_variable']) 
 
-#Before PCA reduction, Scanpy allows to regress out the influence that certain variables could have on data before reducing dimensions.
-#It is suggested to use it on the percentage of mitochondrial gene expression and on the total number of reads per cell (not used for the sake of this review).
-#Then data can be scaled (not applied) and the dimension is reduced to the PCA components (first 50 by default).
+# Before PCA reduction, Scanpy allows to regress out the influence that certain variables could have on data before reducing dimensions.
+# It is suggested to use it on the percentage of mitochondrial gene expression and on the total number of reads per cell (not used for the sake of this review).
+# Then data can be scaled (not applied) and the dimension is reduced to the PCA components (first 50 by default).
 sc.tl.pca(adata, svd_solver='arpack')
 
-#elbow plot to observe the relationship between PCs and variance 
+# elbow plot to observe the relationship between PCs and variance 
 sc.pl.pca_variance_ratio(adata, log=True, n_pcs=50, save=".pdf")
 
 # UMAP embedding
@@ -89,5 +88,7 @@ As transcriptionally distinct populations of cells usually correspond to distinc
 
 ```python
 sc.tl.louvain(adata, resolution=0.5)
+
+# save the results
 adata.write(results_file)
 ```
