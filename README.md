@@ -1,4 +1,10 @@
 # Single-cell RNA sequencing analysis: a step by step overview
+#### S. Slovin<sup>1,+</sup>, A. Carissimo<sup>2,+</sup>, F. Panariello<sup>1,+</sup>, A. Grimaldi<sup>1</sup>, V. Bouché<sup>1</sup>, G. Gambardella<sup>1,3,++</sup>, D. Cacchiarelli<sup>1,4,++</sup>
+
+<sup>1</sup>Telethon Institute of Genetics and Medicine (TIGEM), Armenise/Harvard Laboratory of Integrative Genomics, Pozzuoli, Italy.  
+<sup>2</sup>Istituto per le Applicazioni del Calcolo "Mauro Picone," Consiglio Nazionale delle Ricerche, Naples, Italy.  
+<sup>3</sup>Department of Chemical Materials and Industrial Engineering, University of Naples “Federico II”, Naples, Italy.  
+<sup>4</sup>Department of Translational Medicine, University of Naples "Federico II", Naples, Italy.
 
 ## Abstract
 Thanks to innovative sample-preparation and sequencing technologies, gene expression in individual cells can now be measured for thousands of cells in a single experiment. Since its introduction, single-cell RNA sequencing (scRNA-seq) approaches have revolutionized the genomics field as they created unprecedented opportunities for resolving cell heterogeneity by exploring gene expression profiles at a single-cell resolution. However, the rapidly evolving field of scRNA-seq invoked the emergence of various analytics approaches aimed to maximize the full potential of this novel strategy. Unlike population-based RNA sequencing approaches, scRNA seq necessitates comprehensive computational tools to address high data complexity and keep up with the emerging single-cell associated challenges. Despite the vast number of analytical methods, a universal standardization is lacking. While this reflects the fields' immaturity, it may also encumber a newcomer to blend in.
@@ -13,7 +19,7 @@ The full article [(Slovin et al. 2020)](https://) will be soon available ...
 3. Seurat (R)
 4. [Scanpy](https://github.com/gambalab/scRNAseq_chapter/blob/master/pipelines/scanpy_pipe.md) (Python)
 
-## Original Pubblications of the methods:
+## Original Pubblications of used tools:
 Monocle [(Cacchiarelli et al. 2014)](https://www.nature.com/articles/nbt.2859) 
 GF-ICF [(Gambardella et al. 2019)](https://www.frontiersin.org/articles/10.3389/fgene.2019.00734/abstract) 
 Seurat [(Stuart et al. 2019)](https://doi.org/10.1016/j.cell.2019.05.031) 
