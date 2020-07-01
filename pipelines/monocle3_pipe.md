@@ -7,10 +7,6 @@ Please download:
 
 # Tabule Muris Example
 
-
-# Analyze data using the pipeline provided by Monocle3
-library()
-
 ## 1. First we install all the necessary packages.
 Additional information on possible errors during installation process can be found [HERE](https://cole-trapnell-lab.github.io/monocle3/docs/installation/)
 
