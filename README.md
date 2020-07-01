@@ -8,10 +8,10 @@ In this review, we aim to bridge over the above-mentioned hurdle and propose fou
 The full article [(Slovin et al. 2020)](https://) will be soon available ...
 
 ## Pipelines Examples
-1. Monocle (R) 
+1. [Monocle 3](https://github.com/gambalab/scRNAseq_chapter/blob/master/pipelines/monocle3_pipe.md) (R) 
 2. [GF-ICF](https://github.com/gambalab/scRNAseq_chapter/blob/master/pipelines/gf_icf_pipe.md) (R)
 3. Seurat (R)
-4. Scanpy (Python)
+4. [Scanpy](https://github.com/gambalab/scRNAseq_chapter/blob/master/pipelines/scanpy_pipe.md) (Python)
 
 ## Original Pubblications of the methods:
 Monocle [(Cacchiarelli et al. 2014)](https://www.nature.com/articles/nbt.2859) 
