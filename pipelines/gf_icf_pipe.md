@@ -17,6 +17,8 @@ if(!require(gficf))
   
   # install gficf package
   install.packages(pkgs = "gficf",repos = c("https://dibbelab.github.io/Rrepo/","https://cloud.r-project.org"))
+  
+  library(gficf)
 }
 ```
 
@@ -24,8 +26,8 @@ if(!require(gficf))
 
 ```R
 # Load Tabula Muris dataset (already filterd)
-M = readRDS("~/path/to/emptyDroplets_doublet_filtered_tabulamuris_mtx.rds")
-cell.info = readRDS("~/path/to/tabulamuris_cell_info.rds")
+M = readRDS("/path/to/emptyDroplets_doublet_filtered_tabulamuris_mtx.rds")
+cell.info = readRDS("/path/to/tabulamuris_cell_info.rds")
 ```
 
 ## 3. Gene Filtering and normazlization
@@ -47,6 +49,7 @@ data = gficf::runPCA(data = data,dim = 50)
 # Dimensionality reduction with UMAP 
 data = gficf::runReduction(data = data,reduction = "umap",nt = 6,verbose = T,metric="manhattan")
 ```
+
 ## 5. Clustering Analysis: how to identify cellular sub-populations
 As transcriptionally distinct populations of cells usually correspond to distinct cell types, a key goal of scRNA-seq consists in the identification of cell subpopulations based on their transcriptional similarity. Thus, organizing cells into groups (i.e. clusters) can allow for de novo detection of cell types or identification of different subpopulations in a single cell state.
 
