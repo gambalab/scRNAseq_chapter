@@ -31,7 +31,9 @@ cell.info = readRDS("/path/to/tabulamuris_cell_info.rds")
 ```
 
 ## 3. Gene Filtering and normazlization
-Data normalization addresses the unwanted biases arisen by count depth variability while preserving true biological differences.
+While with gene filtering we remove "uninformative" genes with data normalization we rempove the unwanted biases arisen by count depth variability while preserving true biological differences.
+
+Here with the parameter *cell_proportion_min = .05* we remove genes present in less than 5% of cells. 
 
 ```R
 # Gene filtering and data normalization
@@ -40,7 +42,9 @@ rm(M);gc()
 ```
 
 ## 4. Data summarization & Dimensionality Reduction
-Dimensionality reduction aims to condense the complexity of the data into a lower-dimensional space by optimally preserving its key properties.
+Dimensionality reduction aims to condense the complexity of the data into a lower-dimensional space by optimally preserving its key properties. Dimensionality reduction methods are essential for clustering, visualization, and summarization of scRNA-seq data. PCA is used to summarise a dataset throughout the top N principal components. The number of PCA to use is usually determined by manually inspecting the elbow plot, in which principal components are plotted as a function of the variability they account for, and the number of PCA to use is determined by the point in which an elbow is observed.
+
+Here we set the number of PCAs to use equal to 50 that usually more than enough.
 
 ```R
 # PCA for data summarization
@@ -51,7 +55,15 @@ data = gficf::runReduction(data = data,reduction = "umap",nt = 6,verbose = T,met
 ```
 
 ## 5. Clustering Analysis: how to identify cellular sub-populations
-As transcriptionally distinct populations of cells usually correspond to distinct cell types, a key goal of scRNA-seq consists in the identification of cell subpopulations based on their transcriptional similarity. Thus, organizing cells into groups (i.e. clusters) can allow for de novo detection of cell types or identification of different subpopulations in a single cell state.
+As transcriptionally distinct populations of cells usually correspond to distinct cell types, a key goal of scRNA-seq consists in the identification of cell subpopulations based on their transcriptional similarity.
+
+Cell clusters are found using two steps:
+1. **GFICF** constructs a KNN graph based on the euclidean distance in PCA space, and refines the edge weights between any two cells based on the shared overlap in their local neighborhoods (Jaccard similarity).
+
+2. To cluster the cells, **GFICF** applys a modularity optimization technique such as the Louvain algorithm. When running a graph-based clustering, it is necessary to set the resolution parameter for the community detection algorithm based on modularity optimization. The resolution parameter is correlated to the scale of observing communities. In particular, the higher is the resolution parameter, the larger is the number of smaller communities. 
+Here, we set the resolution parameter to 0.5
+
+The two steps above are performed by the function *clustcells*
 
 ```R
 # Identify clusters
