@@ -16,7 +16,7 @@ The full article [(Slovin et al. 2020)](https://) will be soon available ...
 ## Pipelines Examples
 1. [Monocle 3](https://github.com/gambalab/scRNAseq_chapter/blob/master/pipelines/monocle3_pipe.md) (R) 
 2. [GF-ICF](https://github.com/gambalab/scRNAseq_chapter/blob/master/pipelines/gf_icf_pipe.md) (R)
-3. Seurat (R)
+3. [Seurat](https://github.com/gambalab/scRNAseq_chapter/blob/master/pipelines/seurat_pipe.md) (R)
 4. [Scanpy](https://github.com/gambalab/scRNAseq_chapter/blob/master/pipelines/scanpy_pipe.md) (Python)
 
 ## Original Pubblications of used tools:
