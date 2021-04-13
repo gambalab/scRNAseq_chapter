@@ -11,7 +11,7 @@ Thanks to innovative sample-preparation and sequencing technologies, gene expres
 
 In this review, we aim to bridge over the above-mentioned hurdle and propose four ready-to-use pipelines for scRNA-seq analysis easily accessible by a newcomer, that could fit various biological data types. Here we provide an overview of the currently available single-cell technologies for cell isolation and library preparation and a step by step guide that covers the entire canonical analytic workflow to analyse scRNA-seq data including read mapping, quality controls, gene expression quantification, normalization, feature selection, dimensionality reduction, and cell clustering useful for trajectory inference and differential expression. Such workflow guidelines will escort novices as well as expert users in the analysis of complex scRNA-seq datasets, thus further expanding the research potential of single-cell approaches in basic science, and envisaging its future implementation as best practice in the field.
 
-The full article [(Slovin et al. 2020)](https://) will be soon available ...
+The full article [(Slovin et al. 2020)](https://doi.org/10.1007/978-1-0716-1307-8_19) is now available.
 
 ## Pipelines Examples
 1. [Monocle 3](https://github.com/gambalab/scRNAseq_chapter/blob/master/pipelines/monocle3_pipe.md) (R) 
